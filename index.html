@@ -148,14 +148,16 @@
                       >Phone Number*</label
                     >
                     <input
-                      type="text"
+                      type="tel"
                       class="form-control input-style"
                       id="inputPhone"
                       name="phone"
-                      placeholder="Enter Phone Number : 010.."
+                      placeholder="Enter Phone Number"
                       required
-                      pattern="^01[0125][0-9]{8}$"
-                      title="Invalid phone number !"
+                      oninvalid="this.setCustomValidity('Invalid phone number!')"
+                      onvalid="this.setCustomValidity('')"
+                      onchange="try{setCustomValidity('')}catch(e){}"
+                      pattern="^(?:\+2)?(01)[0-25][0-9]{8}$"
                     />
                   </div>
                   <div class="col-6">

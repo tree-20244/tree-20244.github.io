@@ -25,6 +25,4 @@ var mp = {
     selectElement = document.getElementById(pref);
     value = selectElement.value;
     showTextField(pref, mp[value]);
-    console.log(mp[value]);
-    console.log(value);
   }

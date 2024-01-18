@@ -34,6 +34,8 @@ function submitForm(e) {
   console.log(second_pref_ans);
   console.log(inputQuestions);
 
+
+
   var myForm = document.getElementById("form1");
   url +=
     "?action=addUser&sheet=Sheet1&name=" +
@@ -50,7 +52,7 @@ function submitForm(e) {
       alert("Successfully submitted form!");
       myForm.reset();
       // Hide loading spinner and display success message
-      //document.getElementById("loadingSpinner").style.display = "none";
+      // document.getElementById("loadingSpinner").style.display = "none";
       // document.getElementById("successMessage").style.display = "block";
     })
     .catch((error) => {
@@ -60,3 +62,4 @@ function submitForm(e) {
       console.error("Error:", error);
     });
 }
+
