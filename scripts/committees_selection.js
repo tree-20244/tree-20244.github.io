@@ -39,6 +39,8 @@ function showPortfolio(value, isFirst) {
         "Please provide a link to your Behance account";
       document.getElementById("portfolio_ans").placeholder = "Behance link";
       document.getElementById("portfolio_ans").required = true;
+    } else {
+      document.getElementById("portfolio_question").style.display = "none";
     }
   }
 }
