@@ -33,6 +33,10 @@ body{
     color: var(--primary-color);
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* Carousel */
 .slider{
