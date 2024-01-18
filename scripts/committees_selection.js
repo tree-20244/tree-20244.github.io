@@ -43,15 +43,24 @@ function showPortfolio(value, isFirst) {
   }
 }
 
+function activeAllOptions(pref) {
+  for (let i = 1; i <= 10; i++) {
+    document.getElementById(pref).options[i].disabled = false;
+  }
+}
+
 function selectCommittee(pref) {
   selectElement = document.getElementById(pref);
   value = selectElement.value;
 
   if (pref == "first_pref") {
+    activeAllOptions("second_pref");
     document.getElementById("second_pref").options[
       selectElement.selectedIndex
     ].disabled = true;
   } else {
+    activeAllOptions("first_pref");
+
     document.getElementById("first_pref").options[
       selectElement.selectedIndex
     ].disabled = true;
