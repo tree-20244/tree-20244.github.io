@@ -22,6 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/form.css" />
+    <script src="scripts/popup.js"></script>
+    <link rel="stylesheet" href="style/popup.css" />
   </head>
   <body>
     <div class="container my-5">
@@ -296,6 +298,7 @@
                       placeholder="Enter Your Answer"
                       id="first_pref_ans"
                       name="first_pref_ans"
+                      required
                     />
                   </div>
 
@@ -345,8 +348,27 @@
                       id="second_pref_ans"
                       placeholder="Enter Your Answer"
                       name="second_pref_ans"
+                      required
                     />
                   </div>
+                  <div
+                  class="col-12"
+                  style="display: none"
+                  id="portfolio_question"
+                  >
+                  <label
+                    for="portfolio_ans"
+                    class="form-label label-text"
+                    id="portfolio_label"
+                  ></label>
+                  <input
+                    type="text"
+                    class="form-control input-style"
+                    id="portfolio_ans"
+                    placeholder="Enter Your Answer"
+                    name="portfolio_ans"
+                  />
+                </div>
                   <div class="col-12">
                     <label for="inputQuestions" class="form-label label-text"
                       >Any questions?</label
@@ -375,6 +397,22 @@
         </div>
       </div>
     </div>
+    
+    <div class="isolate_popup" id="show">
+      <div class="popup main_popup" id="popup">
+          <img src="assets/icons/done.svg" class="popup_icon" alt="popImage" />
+          <div onclick="closePop()" class=" close_icon">
+              &times;
+          </div>
+          <div class="popup_content delete_popup">
+              <h1 >Thank you for your registration</h1>
+              <p class="popup-desc">we will contact you soon</p>
+          </div>
+         
+      </div>
+    </div>
+
+    
 
     <script src="scripts/form_submission.js"></script>
   </body>

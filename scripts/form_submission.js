@@ -1,9 +1,13 @@
 //https://script.google.com/macros/s/AKfycbzryVTryJPCpBATMHWKW6zo2fE-NyPfnA65IzlP-RH6z_hJLDGhNo0gKlH2tCyDK39g/exec?action=addUser&sheet=Sheet1&name=ahmed&phone=010
 var url =
-  "https://script.google.com/macros/s/AKfycbzryVTryJPCpBATMHWKW6zo2fE-NyPfnA65IzlP-RH6z_hJLDGhNo0gKlH2tCyDK39g/exec";
+  "https://script.google.com/macros/s/AKfycbwU_YQ_7wcOai5QqGkatDaXLmtO2oJseLDQbhFYhG5SWjRfzBjqHqR61bQKiQnzcIVh/exec";
 
 function submitForm(e) {
   e.preventDefault();
+
+  var submitbtn = document.getElementById("submit_button");
+  submitbtn.innerHTML = "Loadding...";
+
   var name = document.getElementById("inputName").value;
   var phone = document.getElementById("inputPhone").value;
   var email = document.getElementById("inputEmail").value;
@@ -18,30 +22,44 @@ function submitForm(e) {
   var second_pref = document.getElementById("second_pref").value;
   var second_pref_ans = document.getElementById("second_pref_ans").value;
   var inputQuestions = document.getElementById("inputQuestions").value;
-
-  console.log(phone);
-  console.log(name);
-  console.log(email);
-  console.log(university);
-  console.log(faculty);
-  console.log(year);
-  console.log(aboutTREE);
-  console.log(generalQ);
-  console.log(prevExperience);
-  console.log(first_pref);
-  console.log(first_pref_ans);
-  console.log(second_pref);
-  console.log(second_pref_ans);
-  console.log(inputQuestions);
-
+  var portfolio = document.getElementById("portfolio_ans").value;
 
 
   var myForm = document.getElementById("form1");
   url +=
-    "?action=addUser&sheet=Sheet1&name=" +
+    "?action=addUser&sheet="+
+    encodeURIComponent(first_pref)
+    +"&name=" +
     encodeURIComponent(name) +
     "&phone=" +
-    encodeURIComponent(phone);
+    encodeURIComponent(phone)+
+    "&email=" +
+    encodeURIComponent(email)+
+    "&university=" +
+    encodeURIComponent(university)+
+    "&faculty=" +
+    encodeURIComponent(faculty)+
+    "&year=" +
+    encodeURIComponent(year)+
+    "&aboutTREE=" +
+    encodeURIComponent(aboutTREE)+
+    "&whyus=" +
+    encodeURIComponent(generalQ)+
+    "&prevExperience=" +
+    encodeURIComponent(prevExperience)+
+    "&first_pref=" +
+    encodeURIComponent(first_pref)+
+    "&first_pref_ans=" +
+    encodeURIComponent(first_pref_ans)+
+    "&second_pref=" +
+    encodeURIComponent(second_pref)+
+    "&second_pref_ans=" +
+    encodeURIComponent(second_pref_ans)+
+    "&inputQuestions=" +
+    encodeURIComponent(inputQuestions)+
+    "&portfolio=" +
+    encodeURIComponent(portfolio);
+
 
   // Make a GET request using fetch
   fetch(url)
@@ -49,16 +67,14 @@ function submitForm(e) {
     .then((data) => {
       // Handle the response from the server if needed
       console.log(data);
-      alert("Successfully submitted form!");
+      document.getElementById("show").style.display = "block";
       myForm.reset();
-      // Hide loading spinner and display success message
-      // document.getElementById("loadingSpinner").style.display = "none";
-      // document.getElementById("successMessage").style.display = "block";
+      submitbtn.innerHTML = "Send";
+
+      
     })
     .catch((error) => {
       alert("Something went wrong please try again later!");
-      // Hide loading spinner and handle errors
-      // document.getElementById("loadingSpinner").style.display = "none";
       console.error("Error:", error);
     });
 }

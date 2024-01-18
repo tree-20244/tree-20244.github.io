@@ -37,6 +37,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 
 /* Carousel */
 .slider{
@@ -153,6 +157,10 @@ a{
     padding: 20px; 
     border-radius: 5px;
     border: 2px #92929D solid;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word
 }
 
 .input-style::placeholder{
@@ -182,6 +190,10 @@ a{
 
 .select-style:invalid { color: #92929D; }
 
+.select-style option[disabled] {
+    color: #92929D;
+}
+
 .select-style option{
     color: black;
     font-size: 1.2rem;
@@ -206,6 +218,8 @@ a{
 }
 
 
+
+
 /* Break points */
 
 @media (max-width: 768px){
@@ -221,6 +235,7 @@ a{
        
         height: 6px;
     }
+
     
 .registration-section{
     height: 100%;
@@ -240,7 +255,10 @@ a{
     border-radius: 20px;
     padding: 40px 10px;
 }
+
+
 }
+
 
 
 @media (max-width: 576px){
@@ -265,3 +283,4 @@ a{
 @media (max-width: 300px){
    
 }
+
