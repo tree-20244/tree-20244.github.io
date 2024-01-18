@@ -1,0 +1,263 @@
+
+
+:root{
+    background: #F4F3F3;
+    font-family: "Poppins", sans-serif;
+    --primary-color: #53992B;
+
+}
+body{
+    background: #F4F3F3;
+}
+
+.poppins-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+.poppins-medium {
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.poppins-semibold {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+
+/* Carousel */
+.slider{
+   height: 94vh;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.carousel-indicators .active{
+    width:30px;
+    height: 8px;
+}
+.carousel-indicators{
+    left: -25%;
+    bottom: 30px;
+    
+}
+
+.carousel-indicators li{
+    height: 8px;
+    width:  8px;
+    opacity: 0.30; 
+    background: white;
+    margin: 0 4px;
+}
+
+/* Registration section */
+
+.registration-section{
+    height:  94vh;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 8px 9px 31px 5px rgb(6 116 39 / 20%); 
+    padding: 8px 1px;
+    z-index: 2;
+
+}
+
+.registration{
+    height: 92vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 20px;
+    padding: 40px 30px;
+}
+
+/* scroll of registration */
+.registration::-webkit-scrollbar{
+    z-index: -2;
+    width: 8px;
+   padding-left: 2px;
+   padding-right: 2px;
+
+}
+
+.registration::-webkit-scrollbar-track{
+    background: #53992B33;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.registration::-webkit-scrollbar-thumb{
+    background: #53992B;
+    border-radius: 30px;
+   
+}
+
+.registration::-webkit-scrollbar-thumb:hover{
+    background: #53992B;
+    border-radius: 30px;
+
+}
+
+.header-text{
+    font-size: 4rem ;
+    margin-bottom: 10px;
+}
+
+.description-text{
+    font-size: 1.5rem ;
+    color: #92929D;
+
+}
+
+.social-button{
+    margin: 0px 5px;
+    padding: 2% 6.5%;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.social-icon{
+    height: 30px;
+}
+
+.form-section{
+    padding-top: 50px;
+    border-radius: 24px;
+    border-top: 2px #92929D solid;
+}
+
+.social-section{
+    position: relative;
+    top: 30px;
+}
+
+.label-text{
+    font-size: 1.7rem;
+    color: #030303;
+}
+
+.input-style{
+    padding: 20px; 
+    border-radius: 5px;
+    border: 2px #92929D solid;
+}
+
+.input-style::placeholder{
+    color: #92929D;;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.input-style:focus{
+    outline: none;
+    border: 2px var(--primary-color) solid;
+}
+
+.select-style{
+    padding: 12.5px; 
+    border-radius: 5px;
+    border: 2px #92929D solid;
+    color: black;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+
+.select-style:invalid { color: #92929D; }
+
+.select-style option{
+    color: black;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.btn-style{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.btn-style:hover{
+    background-color: #46911b;
+    color: #fff;
+}
+
+
+/* Break points */
+
+@media (max-width: 768px){
+    .carousel-indicators{
+        left: -27%;
+        bottom: 8%;
+    }
+    .carousel-indicators li{
+        height: 6px;
+        width:  6px;
+    }
+    .carousel-indicators .active{
+       
+        height: 6px;
+    }
+    
+.registration-section{
+    height: 100%;
+    border-radius: 20px;
+    background-color: none;
+    box-shadow: none; 
+    padding: 8px 1px;
+    z-index: 2;
+
+}
+
+.registration{
+    height: 100%;
+   
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 20px;
+    padding: 40px 10px;
+}
+}
+
+
+@media (max-width: 576px){
+   
+}
+
+@media (max-width: 400px){
+    .header-text{
+        font-size: 2.4rem ;
+    }
+    
+    .description-text{
+        font-size: 1rem ;
+        color: #92929D;
+    
+    }
+    .social-button{
+        padding: 2% 2%;
+    }
+}
+
+@media (max-width: 300px){
+   
+}
