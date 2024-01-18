@@ -217,6 +217,13 @@ a:hover{
     color: #fff;
 }
 
+.btn-style:disabled{
+    background-color: #53992B33;
+    color: black;
+}
+
+
+
 
 
 

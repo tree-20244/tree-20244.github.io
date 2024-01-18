@@ -7,6 +7,7 @@ function submitForm(e) {
 
   var submitbtn = document.getElementById("submit_button");
   submitbtn.innerHTML = "Loadding...";
+  submitbtn.disabled = true;
 
   var name = document.getElementById("inputName").value;
   var phone = document.getElementById("inputPhone").value;
@@ -75,6 +76,8 @@ function submitForm(e) {
     })
     .catch((error) => {
       alert("Something went wrong please try again later!");
+      submitbtn.disabled = false;
+      submitbtn.innerHTML = "Send";
       console.error("Error:", error);
     });
 }
