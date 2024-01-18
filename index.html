@@ -119,7 +119,7 @@
               <div class="form-section">
                 <form class="row g-3" id="form1" onsubmit="submitForm(event)">
                   <div class="col-6">
-                    <label for="name" class="form-label label-text"
+                    <label for="inputName" class="form-label label-text"
                       >Your Name*</label
                     >
                     <input
@@ -352,23 +352,23 @@
                     />
                   </div>
                   <div
-                  class="col-12"
-                  style="display: none"
-                  id="portfolio_question"
+                    class="col-12"
+                    style="display: none"
+                    id="portfolio_question"
                   >
-                  <label
-                    for="portfolio_ans"
-                    class="form-label label-text"
-                    id="portfolio_label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="form-control input-style"
-                    id="portfolio_ans"
-                    placeholder="Enter Your Answer"
-                    name="portfolio_ans"
-                  />
-                </div>
+                    <label
+                      for="portfolio_ans"
+                      class="form-label label-text"
+                      id="portfolio_label"
+                    ></label>
+                    <input
+                      type="text"
+                      class="form-control input-style"
+                      id="portfolio_ans"
+                      placeholder="Enter Your Answer"
+                      name="portfolio_ans"
+                    />
+                  </div>
                   <div class="col-12">
                     <label for="inputQuestions" class="form-label label-text"
                       >Any questions?</label
@@ -397,22 +397,17 @@
         </div>
       </div>
     </div>
-    
+
     <div class="isolate_popup" id="show">
       <div class="popup main_popup" id="popup">
-          <img src="assets/icons/done.svg" class="popup_icon" alt="popImage" />
-          <div onclick="closePop()" class=" close_icon">
-              &times;
-          </div>
-          <div class="popup_content delete_popup">
-              <h1 >Thank you for your registration</h1>
-              <p class="popup-desc">we will contact you soon</p>
-          </div>
-         
+        <img src="assets/icons/done.svg" class="popup_icon" alt="popImage" />
+        <div onclick="closePop()" class="close_icon">&times;</div>
+        <div class="popup_content delete_popup">
+          <h1>Thank you for your registration</h1>
+          <p class="popup-desc">we will contact you soon</p>
+        </div>
       </div>
     </div>
-
-    
 
     <script src="scripts/form_submission.js"></script>
   </body>
