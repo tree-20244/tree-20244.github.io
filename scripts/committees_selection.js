@@ -1,7 +1,7 @@
 var mp = {
   HR: "Describe for me a time that you handled criticism well.",
   Marketing: "What the difference between marketing and advertising ?",
-  Photography: "Tell me 5 elements of video ",
+  "Photography & Videography": "Tell me 5 elements of video ",
   "Graphic design": "What do you know about color theory ?",
   PR: "How would you approach and convince public figures to participate in our events and ensuring that they also enjoy it.",
   FR: "financial and catering sponsors fits TREE mega event ( educational event )",
