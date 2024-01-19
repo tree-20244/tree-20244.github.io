@@ -26,10 +26,9 @@ function showPortfolio(value, isFirst) {
   if (
     document.getElementById("portfolio_question").style.display != "block" ||
     isFirst ||
-    document.getElementById("first_pref").value != "Mobile Development" ||
-    document.getElementById("first_pref").value != "UI/UX"
-  ) 
-  {
+    (document.getElementById("first_pref").value != "Mobile Development" &&
+      document.getElementById("first_pref").value != "UI/UX")
+  ) {
     if (value == "Mobile Development") {
       document.getElementById("portfolio_question").style.display = "block";
       document.getElementById("portfolio_label").innerHTML =
