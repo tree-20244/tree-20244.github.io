@@ -56,7 +56,7 @@ function submitForm(e) {
     "&second_pref_ans=" +
     encodeURIComponent(second_pref_ans)+
     "&inputQuestions=" +
-    encodeURIComponent(inputQuestions)+
+    encodeURIComponent(inputQuestions);
   
 
 
