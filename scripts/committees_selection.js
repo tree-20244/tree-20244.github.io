@@ -1,11 +1,5 @@
 var mp = {
-  HR: "Describe for me a time that you handled criticism well.",
-  Marketing: "What the difference between marketing and advertising ?",
-  "Photography & Videography": "Tell me 5 elements of video ",
-  "Graphic design": "What do you know about color theory ?",
-  PR: "How would you approach and convince public figures to participate in our events and ensuring that they also enjoy it.",
-  FR: "financial and catering sponsors fits TREE mega event ( educational event )",
-  CNL: "Places for decoration materials and packing",
+
   "Mobile Development": "Tell us your experience with flutter",
   "UI/UX":
     "What's your UX workflow? (the process you go through to take a product from conceptualization to launch)",
@@ -17,7 +11,7 @@ var mp = {
 function showTextField(name, question) {
   var textField = name + "_question";
   var label = name + "_label";
-
+  document.getElementById(textField).value = '';
   document.getElementById(textField).style.display = "block";
   document.getElementById(label).innerHTML = question;
 }
@@ -48,7 +42,7 @@ function showPortfolio(value, isFirst) {
 }
 
 function activeAllOptions(pref) {
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 4; i++) {
     document.getElementById(pref).options[i].disabled = false;
   }
 }
@@ -58,6 +52,7 @@ function selectCommittee(pref) {
   value = selectElement.value;
 
   if (pref == "first_pref") {
+
     activeAllOptions("second_pref");
     document.getElementById("second_pref").options[
       selectElement.selectedIndex
@@ -70,6 +65,5 @@ function selectCommittee(pref) {
     ].disabled = true;
   }
 
-  showPortfolio(value, pref == "first_pref");
   showTextField(pref, mp[value]);
 }

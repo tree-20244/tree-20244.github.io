@@ -1,6 +1,6 @@
 //https://script.google.com/macros/s/AKfycbzryVTryJPCpBATMHWKW6zo2fE-NyPfnA65IzlP-RH6z_hJLDGhNo0gKlH2tCyDK39g/exec?action=addUser&sheet=Sheet1&name=ahmed&phone=010
 var url =
-  "https://script.google.com/macros/s/AKfycbwU_YQ_7wcOai5QqGkatDaXLmtO2oJseLDQbhFYhG5SWjRfzBjqHqR61bQKiQnzcIVh/exec";
+  "https://script.google.com/macros/s/AKfycbzFH-idphDT-irybi_FVIYlH715NjDzxGbIvVa9vbCtrfmieqEr1eyyVDM30nSMsxiM0w/exec";
 
 function submitForm(e) {
   e.preventDefault();
@@ -23,7 +23,6 @@ function submitForm(e) {
   var second_pref = document.getElementById("second_pref").value;
   var second_pref_ans = document.getElementById("second_pref_ans").value;
   var inputQuestions = document.getElementById("inputQuestions").value;
-  var portfolio = document.getElementById("portfolio_ans").value;
 
 
   var myForm = document.getElementById("form1");
@@ -58,8 +57,7 @@ function submitForm(e) {
     encodeURIComponent(second_pref_ans)+
     "&inputQuestions=" +
     encodeURIComponent(inputQuestions)+
-    "&portfolio=" +
-    encodeURIComponent(portfolio);
+  
 
 
   // Make a GET request using fetch
