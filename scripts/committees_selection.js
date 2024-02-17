@@ -9,9 +9,10 @@ var mp = {
 };
 
 function showTextField(name, question) {
+  console.log(name);
   var textField = name + "_question";
   var label = name + "_label";
-  document.getElementById(textField).value = '';
+  document.getElementById(name+"_ans").value = '';
   document.getElementById(textField).style.display = "block";
   document.getElementById(label).innerHTML = question;
 }
