@@ -1,11 +1,11 @@
 var mp = {
 
-  "Mobile Development": "Tell us your experience with flutter",
+  "Mobile Development": "What is your current level in programming? And what programming languages are you familiar with?",
   "UI/UX":
-    "What's your UX workflow? (the process you go through to take a product from conceptualization to launch)",
-  "AC Marketing": "What do you think when you hear the marketing name?",
+    "What is the difference between ui and ux?",
+  "AC Marketing": "Why marketing and not the other committees?",
   "AC HR":
-    "What is your criteria to choose and evaluate someone for a specific job role? And What is the process to hire someone in the organization?",
+    "Is HR one department or several departments?",
 };
 
 function showTextField(name, question) {
