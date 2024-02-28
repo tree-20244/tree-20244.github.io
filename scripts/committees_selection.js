@@ -13,8 +13,9 @@ function showTextField(name, question) {
   var textField = name + "_question";
   var label = name + "_label";
   document.getElementById(name+"_ans").value = '';
+  document.getElementById(name+"_ans").placeholder = question;
   document.getElementById(textField).style.display = "block";
-  document.getElementById(label).innerHTML = question;
+  
 }
 
 function showPortfolio(value, isFirst) {
