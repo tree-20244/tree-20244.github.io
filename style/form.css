@@ -119,7 +119,7 @@ a:hover{
 }
 
 .registration{
-    height: 66vh;
+    height: 74vh;
     overflow-y: scroll;
     overflow-x: hidden;
     border-radius: 20px;
@@ -180,7 +180,7 @@ a:hover{
 }
 
 .form-section{
- 
+    padding-bottom: 100px;
     
 }
 
@@ -199,9 +199,9 @@ a:hover{
     padding: 25px 18px; 
     border-radius: 20px; 
     border: 1px #92929D solid;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: 400;
     word-wrap: break-word;
     background-color: #F6F6EB;
 }
@@ -256,7 +256,7 @@ a:hover{
      padding-top: 15px;
       padding-bottom: 15px;
       background: #5CD66D;
-      box-shadow: 0px 5px 11px rgba(0, 212, 126, 0.18);
+      box-shadow: 0px 10px 19px 11px rgba(0, 212, 126, 0.18);;
       border-radius: 90px;
       justify-content: center;
       align-items: center;
@@ -282,11 +282,38 @@ a:hover{
     color: #fff; */
 }
 
+.footer{
+    background-color: #FEFEF6;
+    padding: 20px 20px;
+    border-top: 2px #01394133 solid;
+    border-right: 2px #01394133 solid;
+    border-left: 2px #01394133 solid;
+    height: 8.4vh;
+    margin: 50px 5% 0;
+    border-radius: 24px 24px 0 0;
+}
+
+.footer-logo{
+    
+}
+
+.copy-rights-text{
+    margin-top: 8px;
+    color: #92929D;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+
 .btn-style:hover{
     background-color: #2EB75C;
     color: #fff;
     width: 80%;
     margin: 0 10%;
+    box-shadow: none;
 }
 
 .btn-style:active{
@@ -317,6 +344,14 @@ a:hover{
     color: white;
 }
 
+.stiky-btn{
+    background: linear-gradient(180deg, rgba(246, 246, 235, 0) 0%, #F6F6EB  37%);
+    border-radius: 0 0 24px 24px ;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    padding: 40px 0 20px;
+}
 
 
 
@@ -376,7 +411,30 @@ a:hover{
     color: #013941;
     opacity: 0.7;
 }
+.form-section{
+    padding-bottom: 120px;
+    
+}
 
+.stiky-btn{
+  
+    width: 90%;
+   
+}
+
+.btn-style{
+    width: 80%; 
+}
+
+.footer-logo img{
+    width: 100px;
+
+}
+
+.social-logos img{
+    width: 30px;
+
+}
 
 }
 

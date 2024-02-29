@@ -1,6 +1,11 @@
 //https://script.google.com/macros/s/AKfycbzryVTryJPCpBATMHWKW6zo2fE-NyPfnA65IzlP-RH6z_hJLDGhNo0gKlH2tCyDK39g/exec?action=addUser&sheet=Sheet1&name=ahmed&phone=010
 var url =
-  "https://script.google.com/macros/s/AKfycbzFH-idphDT-irybi_FVIYlH715NjDzxGbIvVa9vbCtrfmieqEr1eyyVDM30nSMsxiM0w/exec";
+  "https://script.google.com/macros/s/AKfycbyXU06Ex0ilpPSdfo9ZrPYr0LTdJYKhhSsR4-YM4Bp4j9MV17Fnfz9I-sY-vgeQYb69sA/exec";
+
+
+
+
+
 
 function submitForm(e) {
   e.preventDefault();
@@ -16,7 +21,7 @@ function submitForm(e) {
   var faculty = document.getElementById("inputFaculty").value;
   var year = document.getElementById("inputYear").value;
   var aboutTREE = document.getElementById("aboutTREE").value;
-  var generalQ = document.getElementById("generalQ").value;
+ 
   var prevExperience = document.getElementById("prevExperience").value;
   var first_pref = document.getElementById("first_pref").value;
   var first_pref_ans = document.getElementById("first_pref_ans").value;
@@ -43,8 +48,7 @@ function submitForm(e) {
     encodeURIComponent(year)+
     "&aboutTREE=" +
     encodeURIComponent(aboutTREE)+
-    "&whyus=" +
-    encodeURIComponent(generalQ)+
+ 
     "&prevExperience=" +
     encodeURIComponent(prevExperience)+
     "&first_pref=" +
