@@ -72,7 +72,8 @@ function submitForm(e) {
       console.log(data);
       document.getElementById("show").style.display = "block";
       myForm.reset();
-      submitbtn.innerHTML = "Send";
+      submitbtn.disabled = false;
+      submitbtn.innerHTML = "Submit";
 
       
     })
