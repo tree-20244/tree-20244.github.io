@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6H6CE3299"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-H6H6CE3299');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegates Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="assets/icons/Logo Color Green.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/committees_selection.js"></script>
+    <!-- <script src="style/bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="style/bootstrap/js/bootstrap.min.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/form.css" />
+    <script src="scripts/popup.js"></script>
+    <link rel="stylesheet" href="style/popup.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="container ">
+        <div class="row">
+          <div class="col-12">
+            <div class="navbar pt-4 nav-logo">  
+                <img
+                  src="assets/icons/Logo Color Green.png"
+                  alt="logo"
+                  class="logo-img"
+                  width="100px"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-md my-md-5 remove-padding">
+      <div class="row">
+        <div class="col-md-4 d-md-block  d-none carousel-section">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active acc"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item slider-item active">
+                <img
+                  src="assets/images/s0.jpg"
+                  alt="Old Sessions"
+                  class="slider"
+                />
+              </div>
+
+              <div class="item slider-item">
+                <img
+                  src="assets/images/s1.jpg"
+                  alt="Old Sessions"
+                  class="slider"
+                />
+              </div>
+
+              <div class="item slider-item">
+                <img
+                  src="assets/images/s2.jpg"
+                  alt="Old Sessions"
+                  class="slider"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8  mt-md-0">
+          <div class="ms-md-4 registration-section">
+            <div class="reg">
+              <div class="registration">
+                <div class="text-center header-text  blogh-regular">
+                Join Us
+                </div>
+
+                <p class="text-center description-text">
+                  Fill the form & we will contact you
+                </p>
+                
+
+                <!-------Form-->
+                <div class="form-section">
+                  <form class="row g-3" id="form1" onsubmit="submitForm(event)">
+                    <div class="col-md-4 col-12">
+                      
+                      <input
+                        type="text"
+                        class="form-control input-style"
+                        id="inputName"
+                        name="name"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <input
+                        type="tel"
+                        class="form-control input-style"
+                        id="inputPhone"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required
+                        oninvalid="this.setCustomValidity('Invalid phone number!')"
+                        onvalid="this.setCustomValidity('')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        pattern="^(?:\+2)?(01)[0-25][0-9]{8}$"
+                      />
+                    </div>
+                    <div class="col-12">
+                    
+                      <input
+                        type="email"
+                        class="form-control input-style"
+                        id="inputEmail"
+                        name="email"
+                        placeholder="Email"
+                        required
+                        title="Invalid email !"
+                      />
+                    </div>
+                  
+                    <div class="col-md-3 col-12">
+                    
+                      <input
+                        type="text"
+                        class="form-control input-style"
+                        id="inputUniversity"
+                        name="university"
+                        placeholder="University"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                    
+                      <input
+                        type="text"
+                        class="form-control input-style"
+                        id="inputFaculty"
+                        name="faculty"
+                        placeholder="Faculty"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <input
+                      type="text"
+                      class="form-control input-style"
+                      id="inputYear"
+                      name="year"
+                      placeholder="Academic Year"
+                      required
+                    />
+                      
+                    </div>
+
+                    <div class="col-12">
+                    
+                      <textarea
+
+                        class="form-control input-style"
+                        id="aboutTREE"
+                        name="aboutTREE"
+                        placeholder="What do you know about TREE & why do you want to join us?"
+                        required
+                        rows="5"
+                        style="resize: none;"></textarea>
+                    </div>
+                    <!-- <div class="col-6">
+                      
+                      <br />
+                      <input
+                        type="text"
+                        class="form-control input-style"
+                        id="generalQ"
+                        name="generalQ"
+                        placeholder="Enter your answer"
+                        required
+                      />
+                    </div> -->
+
+                    <!------->
+                    <div class="col-12">
+                    
+                      <textarea
+                        
+                        class="form-control input-style"
+                        id="prevExperience"
+                        name="pervious_experience"
+                        placeholder="Do you have any previous professional experience?"
+                        required
+                        rows="5"
+                        style="resize: none;"
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      
+                      <select
+                        name="first_pref"
+                        id="first_pref"
+                        class="form-select select-style"
+                        required
+                        onchange="selectCommittee('first_pref')"
+                      >
+                        <option value="" disabled selected>
+                          Choose your First Preference
+                        </option>
+                      
+                        <option value="Mobile Development">
+                          Mobile Development
+                        </option>
+                        <option value="UI/UX">UI/UX</option>
+                        <option value="AC Marketing"> Marketing</option>
+                        <option value="AC HR"> HR</option>
+                      </select>
+                    </div>
+
+                    <div
+                      class="col-12"
+                      id="first_pref_question"
+                      style="display: none"
+                    >
+                    
+                      <textarea
+                      
+                        class="form-control input-style"
+                        placeholder="Enter Your Answer"
+                        id="first_pref_ans"
+                        name="first_pref_ans"
+                        required
+                        rows="5"
+                        style="resize: none;"
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                    
+                      <select
+                        name="second_pref"
+                        id="second_pref"
+                        class="form-select select-style"
+                        required
+                        onchange="selectCommittee('second_pref')"
+                      >
+                        <option value="" disabled selected>
+                          Choose your Second Preference
+                        </option>
+                      
+                        <option value="Mobile Development">
+                          Mobile Development
+                        </option>
+                        <option value="UI/UX">UI/UX</option>
+                        <option value="AC Marketing"> Marketing</option>
+                        <option value="AC HR"> HR</option>
+                      </select>
+                    </div>
+
+                    <div
+                      class="col-12"
+                      style="display: none"
+                      id="second_pref_question"
+                    >
+                      
+                      <textarea
+                        class="form-control input-style"
+                        id="second_pref_ans"
+                        placeholder="Enter Your Answer"
+                        name="second_pref_ans"
+                        required
+                        rows="5"
+                        style="resize: none;"
+                      ></textarea>
+                    </div>
+                    <div
+                      class="col-12"
+                      style="display: none"
+                      id="portfolio_question"
+                    >
+                      <label
+                        for="portfolio_ans"
+                        class="form-label label-text"
+                        id="portfolio_label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="form-control input-style"
+                        id="portfolio_ans"
+                        placeholder="Enter Your Answer"
+                        name="portfolio_ans"
+                      />
+                    </div>
+                    <div class="col-12">
+                      
+                      <input
+                        type="text"
+                        class="form-control input-style"
+                        id="inputQuestions"
+                        placeholder="Do you have any questions?"
+                        name="inputQuestions"
+                      />
+                    </div>
+                    
+                    <div class="stiky-btn">
+                      <button
+                       
+                        id="submit_button"
+                        type="submit"
+                        class=" btn  btn-style my-5"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  class=" footer">
+      <div class=" d-md-flex d-none justify-content-between">
+          <div class="footer-logo ">
+            <img
+              src="assets/icons/grey_logo.svg"
+              alt="logo"
+              class="logo-img"
+              width="150px"
+            />
+          </div>
+
+          <div class="copy-rights-text">
+            <p class="text-center">
+              @2024 TREE All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="social-logos">
+            <a href="https://www.facebook.com/treeegy">
+            
+                <img
+                  src="assets/icons/facebook.svg"
+                  alt="facebook"
+                  class="social-icon"
+                  width="50px"
+                />
+          
+            </a>
+            <a href="https://www.instagram.com/treeegy/">
+             
+                <img
+                  src="assets/icons/instagram.svg"
+                  alt="instagram"
+                  class="social-icon"
+                  width="50px"
+                />
+           
+            </a>
+            <a
+              href="https://www.linkedin.com/company/tree-egy/"
+            >
+            
+                <img
+                  src="assets/icons/linkedin.svg"
+                  alt="linkedin"
+                  class="social-icon"
+                  width="50px"
+                />
+             
+            </a>
+          </div>
+      </div>
+
+
+      <div class=" d-md-none d-grid ">
+        <div class="row">
+          <div class="footer-logo  col-6">
+            <img
+              src="assets/icons/Logo Color Green.png"
+              alt="logo"
+              class="logo-img"
+              width="20px"
+            />
+          </div>
+  
+         
+  
+          <div class="social-logos col-6 text-end">
+            <a href="https://www.facebook.com/treeegy">
+            
+                <img
+                  src="assets/icons/facebook.svg"
+                  alt="facebook"
+                  class="social-icon"
+                  width="50px"
+                />
+          
+            </a>
+            <a href="https://www.instagram.com/treeegy/">
+             
+                <img
+                  src="assets/icons/instagram.svg"
+                  alt="instagram"
+                  class="social-icon"
+                  width="50px"
+                />
+           
+            </a>
+            <a
+              href="https://www.linkedin.com/company/tree-egy/"
+            >
+            
+                <img
+                  src="assets/icons/linkedin.svg"
+                  alt="linkedin"
+                  class="social-icon"
+                  width="50px"
+                />
+             
+            </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="copy-rights-text col-12">
+            <p class="text-center">
+              @2024 TREE All Rights Reserved.
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="isolate_popup" id="show">
+      <div class="popup main_popup" id="popup">
+        <img src="assets/icons/done.svg" class="popup_icon" alt="popImage" />
+        <div onclick="closePop()" class="close_icon">&times;</div>
+        <div class="popup_content delete_popup">
+          <h1>Thank you for your registration</h1>
+          <p class="popup-desc">we will contact you soon</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/form_submission.js"></script>
+  </body>
+</html>
