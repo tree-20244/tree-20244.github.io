@@ -1,11 +1,17 @@
 var mp = {
 
-  "Mobile Development": "What is your current level in programming? And what programming languages are you familiar with?",
-  "UI/UX":
-    "What is the difference between ui and ux?",
-  "AC Marketing": "Why marketing and not the other committees?",
-  "AC HR":
-    "Is HR one department or several departments?",
+  "HR": "Describe for me a time that you handled criticism well.",
+  "Marketing":
+    "What the difference between marketing and advertising ?",
+  "Photography": "Tell me 5 elements of video",
+  "Graphic design":
+    "What do you know about color theory ?",
+    "PR":
+    "How would you approach and convince public figures to participate in our events and ensuring that they also enjoy it.",
+    "FR":
+    "financial and catering sponsors fits TREE mega event ( educational event )",
+    "CNL":
+    "Places for decoration materials and packing",
 };
 
 function showTextField(name, question) {
