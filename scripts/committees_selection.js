@@ -9,7 +9,7 @@ var mp = {
     "PR":
     "How would you approach and convince public figures to participate in our events and ensuring that they also enjoy it.",
     "FR":
-    "financial and catering sponsors fits TREE mega event ( educational event )",
+    "Examples for fund and catering sponsors.",
     "CNL":
     "Places for decoration materials and packing",
 };
